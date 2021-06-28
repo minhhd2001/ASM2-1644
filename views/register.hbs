@@ -4,15 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mystyle.css">
     <title>Register new user</title>
 </head>
 <body>
-    <form action="/doRegister" method="post">
+    {{!-- <form action="/doRegister" method="post">
         User Name <input type="text" name="txtName">
         <br>
         Password <input type="password" name="txtPassword">
         <br>
         <input type="submit" value="Register">
-    </form>
+    </form> --}}
+    {{!-- Heading1 --}}
+	<div class="naviagtion2">
+		<a href="//theme.hstatic.net/200000225139/1000654062/14/xem-tren-vieon.svg?v=114"><img style="float: right;" width="150px" height="70px" src="/Logo-VIE.jpg"></a>
+	</div>
+	<div class="naviagtion3">
+	<a href="../ASM2-Merit/HĐ.php"><img float="left" width="150px" height="150px" src="/HĐ.jpg"></a>
+	</div>
+	<div class="naviagtion">
+		<div class="heading1">
+			<p style="color: white; padding-top:8px; ">VieSHOP.vn - Official website selling products with legal copyright only by Rap Viet Program</p>
+			<p>
+			<a style="color: white; text-decoration: none;" class="heading1" href="tel:1900588804">Hotline: 1900 588804 |</a>
+			<a style="color: white; text-decoration: none;" class="heading1" href="mailto:hptro@vietshop.vn"> hotro@vieshop.vn |</a>
+			<a style="color: white; text-decoration: none;" class="heading1" href="https://www.facebook.com/VieShopDatVietVAC/">FB: VieShopDatVietVAC</a>
+			</p>
+			
+			<div class="center">
+				<a href="/"><img width="250px" height="70px" src="/Logo-RV.png"></a>
+			</div>
+		</div>
+	</div>
+	{{!-----------------}}
+	{{!--Heading2--}}
+	<div style="padding-top: 160px;" class="center">
+		<video autoplay="autoplay" loop="loop" muted="muted" float="left" style="width: 100%;height:251,3px " 
+		poster="//theme.hstatic.net/200000225139/1000680082/14/vieshop_2021-rapviet-concer-km.jpg?v=262">
+		<source src="https://tinyurl.com/vieshop-2021" type="video/mp4"></video>
+		<br>
+		<br>
+	</div>
+	{{!-----------------}}
+
+
+    </div>
+	<h3 style="text-align: center; ">LOGIN FOR ADMIN</h3>
+	<table style="border: 2px solid black; padding-top: 20px;" align="center" cellpadding="10" cellspacing="0">
+		<form action="/doRegister" method="post">
+
+			<tr>
+				<td><b>Username</b></td>
+				<td><input type="text" name="txtName"></td>
+			</tr>
+
+			<tr>
+				<td><b>Password</b></td>
+				<td><input type="password" name="txtPassword"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="Login" value="Register">
+					<input type="reset" name="reset" value="Reset">
+				</td>
+			</tr>
+			
+		</form>
+	</table>
+	<br>
+	<br>
+	<br>
+
+    {{!--Heading3--}}
+	<div class="heading2">
+		<ul>
+			<a style="padding:5px; text-decoration: none; color: black" href="../ASM2-Merit/CSTT.php"><b>PAYMENT AND DELIVERY</b></a>
+			<a style="padding:5px; text-decoration: none; color: black" href="../ASM2-Merit/CSDT.php"><b>RETURN POLICY</b></a>
+			<a style="padding:5px; text-decoration: none; color: black" href="../ASM2-Merit/CSBM.php"><b>PRIVACY POLICY</b>T</a>
+		</ul>
+	</div>
+	{{!-----------------}}
+	{{!--Heading4--}}
+	<div class="heading3">
+		<p>© 2020 - Copyright of VieSHOP Joint Stock Company</p>
+		<p>Certificate of business registration number 0316124114 issued by the Department of Planning and Investment of Ho Chi Minh City</p>
+		<p>dated 20/01/2020</p>
+		<p>All Rights Reserved. Powered by Haravan Enterprise.</p>
+		<img height="50px" width="100" src="/BCT.png">
+	</div>
+	{{!-----------------}}
 </body>
 </html>

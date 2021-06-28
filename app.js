@@ -122,9 +122,10 @@ app.get('/view', async (req, res)=>{
 // })
 ///
 app.post('/doInsert', async (req, res)=>{
-    var nameInput = req.body.txtName;
-    var priceInput = req.body.txtPrice;
-    var newProduct = {name:nameInput, price: priceInput, size: {dai: 20, rong: 40}};
+    const nameInput = req.body.txtName;
+    const priceInput = req.body.txtPrice;
+    const imgURLInput = req.body.imgURL;
+    const newProduct = {name:nameInput, price:priceInput,imgUrl:imgURLInput, size : {dai:20, rong:40}}
     await dbHandler.insertOneIntoCollection(newProduct, "SanPham");
     res.render('index')
 })
@@ -145,7 +146,7 @@ app.get('/insert',(req,res)=>{
 })
 
 app.get('/',(req,res)=>{
-    var userName ='Not logged In';
+    var userName ='ADMIN';
     if(req.session.username){
         userName = req.session.username;
     }
