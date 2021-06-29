@@ -47,7 +47,7 @@ app.post('/login',async (req,res)=>{
         req.session.username = nameInput;
         res.render('index',{loginName:nameInput})       
     }else{
-        res.render('index',{errorMsg:"Login failed!"})
+        res.render('index',{errorMsg:"Login Failed! Please Try Again"})
     }
 })
 ///

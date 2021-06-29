@@ -7,7 +7,7 @@
     "start": "node app.js"
   },
   "author": "Hoang Duc Minh",
-  "license": "Freee",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "express-session": "^1.17.2",
