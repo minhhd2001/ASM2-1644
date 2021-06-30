@@ -158,5 +158,4 @@ app.get('/register',(req,res)=>{
 })
 
 var PORT = process.env.PORT || 5000;
-app.listen(PORT);
-console.log('Server is running at: '+ PORT);
+app.listen(PORT, () => { console.log('Server is running at: '+ PORT) })
