@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static('public'))
 
-const dbHandler = require('./databaseHandler')
+const dbHandler = require('./databaseHandler.js')
 
 var dsNotToDelete = ['ao','quan','bep','my goi'];
 
